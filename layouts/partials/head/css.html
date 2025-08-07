@@ -52,6 +52,11 @@
         --code-background-color: {{ with .Site.Params.code_background_color_dark }}{{ . }}{{ else }}#313244{{ end }};
         --code-block-color: {{ with .Site.Params.code_block_color_dark }}{{ . }}{{ else }}#CDD6F4{{ end }};
         --code-block-background-color: {{ with .Site.Params.code_block_background_color_dark }}{{ . }}{{ else }}#181825{{ end }};
+        /* Darker sidebar colors for better contrast in dark mode */
+        --sidebar-p-color: {{ with .Site.Params.sidebar_p_color_dark }}{{ . }}{{ else }}#8B93A5{{ end }};
+        --sidebar-a-color: {{ with .Site.Params.sidebar_a_color_dark }}{{ . }}{{ else }}#A6ADC8{{ end }};
+        --sidebar-h1-color: {{ with .Site.Params.sidebar_h1_color_dark }}{{ . }}{{ else }}#b4befe{{ end }};
+        --sidebar-socials-color: {{ with .Site.Params.sidebar_socials_color_dark }}{{ . }}{{ else }}#F5C2E7{{ end }};
     }
     body {
         background: linear-gradient(135deg, var(--bkg-color) 0%, #E6E9EF 50%, var(--bkg-color) 100%);

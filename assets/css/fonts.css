@@ -1,13 +1,14 @@
 /* Google Fonts - Mixed Typography for Catppuccin Theme */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
 
 /* Keep local fonts as fallback for existing font references */
 /* abril-fatface-regular - latin */
 @font-face {
-  font-family: 'Abril Fatface';
+  font-family: "Abril Fatface";
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('/fonts/abril-fatface-v19-latin-regular.woff2') format('woff2'),
-       url('/fonts/abril-fatface-v19-latin-regular.woff') format('woff');
+  src:
+    local(""),
+    url("/fonts/abril-fatface-v19-latin-regular.woff2") format("woff2"),
+    url("/fonts/abril-fatface-v19-latin-regular.woff") format("woff");
 }

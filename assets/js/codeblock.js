@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-
+document.addEventListener("DOMContentLoaded", function () {
   // Get code blocks
   const codeblocks = document.querySelectorAll("pre code");
 
@@ -10,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     copyButton.className = "copy-button";
     const container = document.createElement("div");
     container.className = "code-container";
-    
+
     // Copy clicked closure
     copyButton.addEventListener("click", (e) => {
       e.target.className = "copy-success";
@@ -26,5 +25,5 @@ document.addEventListener("DOMContentLoaded", function() {
     container.appendChild(codeblock);
     // Add the copy button to the container
     container.appendChild(copyButton);
-  })
+  });
 });

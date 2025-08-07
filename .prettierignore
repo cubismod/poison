@@ -1,0 +1,13 @@
+node_modules
+public
+dist
+.parcel-cache
+**/*.map.js
+themes
+resources
+static/map
+assets/js/lib
+assets/css/lib
+**/*.min.js
+static/katex
+layouts
