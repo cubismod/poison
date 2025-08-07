@@ -32,9 +32,8 @@
  */
 
 html {
-  font-family: "Fira Sans", sans-serif;
-    font-weight:300;
-
+  font-family: "Inter", "Source Sans Pro", "Fira Sans", sans-serif;
+  font-weight: 400;
 }
 @media (min-width: 48em) {
   html {
@@ -109,9 +108,9 @@ pre {
 .sidebar-about h1 {
   color: var(--sidebar-h1-color);
   margin-top: 0;
-  font-weight:300;
+  font-weight: 600;
   font-size: 1.5em;
-  font-family: "Abril Fatface", serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 /* Sidebar nav */
