@@ -41,14 +41,10 @@ window.toggleCollapsible = function (elementId) {
 
 // Wait for everything to load, then try multiple times to find elements
 function initCollapsible() {
-  console.log("Initializing collapsible...");
-
   // Find all collapsible headers and add event listeners
   const headers = document.querySelectorAll(".collapsible-header");
-  console.log("Found collapsible headers:", headers.length);
 
   if (headers.length === 0) {
-    console.log("No headers found, will retry...");
     // If no headers found, try again after a short delay
     setTimeout(initCollapsible, 100);
     return;
@@ -60,13 +56,10 @@ function initCollapsible() {
       const match = onclick.match(/toggleCollapsible\('([^']+)'\)/);
       if (match) {
         const elementId = match[1];
-        console.log("Event listener triggered for:", elementId);
         window.toggleCollapsible(elementId);
       }
     });
   });
-
-  console.log("Collapsible initialization complete");
 }
 
 // Try multiple initialization approaches
