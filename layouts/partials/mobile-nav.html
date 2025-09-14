@@ -1,0 +1,28 @@
+<!-- Mobile Navigation - Hidden on Desktop/Tablet -->
+<input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+
+<!-- Mobile menu backdrop -->
+<label for="mobile-menu-toggle" class="mobile-menu-backdrop"></label>
+
+<div class="mobile-nav">
+    <div class="mobile-header">
+        <div class="mobile-brand">
+            <a href="{{ .Site.BaseURL }}">{{ .Site.Params.brand | default .Site.Title }}</a>
+        </div>
+        <label for="mobile-menu-toggle" class="hamburger">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </label>
+    </div>
+    
+    <nav class="mobile-menu">
+        <div class="mobile-sidebar-content">
+            {{ partial "light_dark.html" . }}
+            {{ partial "sidebar/title.html" . }}
+            {{ partial "sidebar/menu.html" . }}
+            {{ partial "sidebar/socials.html" . }}
+            {{ partial "sidebar/copyright.html" . }}
+        </div>
+    </nav>
+</div>
